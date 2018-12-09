@@ -11,7 +11,7 @@ MIT License
 Github: https://github.com/ohlookitsderpy/derpyenterprises.org
 */
 body {
-    background-image: url("../img/wallpaper.jpg");
+    background-image: url('../img/old.jpg');
     background-attachment: fixed !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -23,13 +23,21 @@ img {
     border-radius: 50%;
 }
 
-a {
+p {
+    color: white !important;
+}
+
+.btn {
     text-decoration: none !important;
     color: black !important;
 }
 
 .title {
     background-color: none !important;
+}
+
+.yeet {
+    display: none;
 }
 
 @media only screen and (min-width: 720px) {
@@ -42,3 +50,4 @@ a {
 ::selection {
     background: #FFFFFF;
 }
+

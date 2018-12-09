@@ -34,7 +34,34 @@ onKonamiCode(() => {
   document.getElementById("e").innerHTML = "Enjoyed this Easter egg? Star this repo on GitHub <a href='https://github.com/ohlookitsderpy/derpyenterprises.org' target=_blank'>here</a>!";
   document.getElementById("o").innerHTML = "The page will automatically refresh once the song is over!"
   document.getElementById("uwu").style.display = "none";
-  uwu.onended = () => {
-    location.reload();
-  };
+  uwu.onended = () => { location.reload(); };
 });
+
+// Wallpapers
+function getCurrentSeason() { //https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
+  var now = new Date();
+  var currentYear = now.getFullYear();
+  
+  if (now < new Date(currentYear, 2, 1))  return 'winter';
+  if (now < new Date(currentYear, 5, 1))  return 'spring';
+  if (now < new Date(currentYear, 8, 1))  return 'summer';
+  if (now < new Date(currentYear, 11, 1)) return 'autumn';
+  return 'winter';
+}
+
+switch (getCurrentSeason()) { //https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
+  case 'winter':
+    document.body.style.background = "url('assets/img/seasons/winter.jpg')";
+    break;
+  case 'spring':
+    document.body.style.background = "url('assets/img/seasons/spring.jpg')";
+    break;
+  case 'summer':
+    document.body.style.background = "url('assets/img/seasons/summer.jpg')";
+    break;
+  case 'autumn':
+    document.body.style.background = "url('assets/img/seasons/autumn.jpg')";
+    document.getElementById("titletext").setAttribute("style", "color: white !important;");
+    document.getElementById("gang").setAttribute("style", "color: white !important;");
+    break;
+}
