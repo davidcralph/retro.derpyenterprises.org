@@ -46,7 +46,7 @@ app.post('/upload', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-    res.sendFile(join(__dirname, 'static/404.html'));
+    res.status(404).sendFile(join(__dirname, 'static/404.html'));
 });
 
 app.listen(80, () => {
