@@ -23,7 +23,7 @@ img {
     border-radius: 50%;
 }
 
-p {
+p, a {
     color: white !important;
 }
 
@@ -50,4 +50,3 @@ p {
 ::selection {
     background: #FFFFFF;
 }
-
