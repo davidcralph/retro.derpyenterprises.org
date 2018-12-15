@@ -11,7 +11,7 @@ MIT License
 Github: https://github.com/ohlookitsderpy/derpyenterprises.org
 */
 // Konami code
-function onKonamiCode(cb) { //https://stackoverflow.com/a/45576888
+const onKonamiCode = (cb) => { //https://stackoverflow.com/a/45576888
   var input = '';
   var key = '38384040373937396665';
   document.addEventListener('keydown', (e) => {
@@ -21,6 +21,7 @@ function onKonamiCode(cb) { //https://stackoverflow.com/a/45576888
     input = ("" + e.keyCode);
   });
 }
+
 // Easter Egg
 onKonamiCode(() => {
   var uwu = new Audio('assets/audio/kirbe.ogg');
@@ -38,7 +39,7 @@ onKonamiCode(() => {
 });
 
 // Wallpapers
-function getCurrentSeason() { //https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
+const getCurrentSeason = () => { //https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
   var now = new Date();
   var currentYear = now.getFullYear();
   
