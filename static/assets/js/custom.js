@@ -10,15 +10,16 @@
 MIT License
 Github: https://github.com/ohlookitsderpy/derpyenterprises.org
 */
+
 // Konami code
 const onKonamiCode = (cb) => { //https://stackoverflow.com/a/45576888
   var input = '';
   var key = '38384040373937396665';
   document.addEventListener('keydown', (e) => {
-    input += ("" + e.keyCode);
+    input += ('' + e.keyCode);
     if (input === key) return cb();
     if (!key.indexOf(input)) return;
-    input = ("" + e.keyCode);
+    input = ('' + e.keyCode);
   });
 }
 
@@ -26,15 +27,15 @@ const onKonamiCode = (cb) => { //https://stackoverflow.com/a/45576888
 onKonamiCode(() => {
   var uwu = new Audio('assets/audio/kirbe.ogg');
   uwu.play();
-  alert("konami code activated, click ok to enable kirbe mode");
+  alert('konami code activated, click ok to enable kirbe mode');
   document.body.style.background = "url('assets/img/kirby.jpg')";
-  document.body.style.color = "white";
-  document.title = "kirbe mode enabled";
-  document.getElementById("icon").src = "assets/img/kirby.gif";
-  document.getElementById("titletext").innerHTML = "Kirby <3";
-  document.getElementById("e").innerHTML = "Enjoyed this Easter egg? Star this repo on GitHub <a href='https://github.com/ohlookitsderpy/derpyenterprises.org' target=_blank'>here</a>!";
-  document.getElementById("o").innerHTML = "The page will automatically refresh once the song is over!"
-  document.getElementById("uwu").style.display = "none";
+  document.body.style.color = 'white';
+  document.title = 'kirbe mode enabled';
+  document.getElementById('icon').src = 'assets/img/kirby.gif';
+  document.getElementById('titletext').innerHTML = 'Kirby <3';
+  document.getElementById('e').innerHTML = "Enjoyed this Easter egg? Star this repo on GitHub <a href='https://github.com/ohlookitsderpy/derpyenterprises.org' target=_blank'>here</a>!";
+  document.getElementById('o').innerHTML = 'The page will automatically refresh once the song is over!'
+  document.getElementById('uwu').style.display = 'none';
   uwu.onended = () => { location.reload(); };
 });
 
@@ -62,7 +63,7 @@ switch (getCurrentSeason()) { //https://gist.github.com/neris/5ddff1ec5d421602a0
     break;
   case 'autumn':
     document.body.style.background = "url('assets/img/seasons/autumn.jpg')";
-    document.getElementById("titletext").setAttribute("style", "color: white !important;");
-    document.getElementById("gang").setAttribute("style", "color: white !important;");
+    document.getElementById('titletext').setAttribute('style', 'color: white !important;');
+    document.getElementById('gang').setAttribute('style', 'color: white !important;');
     break;
 }

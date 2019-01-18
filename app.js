@@ -30,7 +30,7 @@ app.post('/upload', (req, res) => {
             error: 'Invalid key!'
         }));
     } else {
-        if (!req.body.key === "") {
+        if (!req.body.key === '') {
             res.status(401).send(JSON.stringify({
                 success: false,
                 error: 'Invalid key!'
@@ -50,5 +50,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(80, () => {
-    console.log("hi");
+    console.log('hi');
 }); 
