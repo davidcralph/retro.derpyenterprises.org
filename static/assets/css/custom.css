@@ -12,7 +12,7 @@ Github: https://github.com/ohlookitsderpy/derpyenterprises.org
 */
 
 body {
-    background-image: url('../img/old.jpg' );
+    background-image: url('../img/old.jpg');
     background-attachment: fixed !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -41,7 +41,7 @@ p, a {
     display: none;
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 1000px) {
     .container {
         height: auto;
         width: 50%;
