@@ -33,9 +33,9 @@ onKonamiCode(() => {
   document.title = 'kirbe mode enabled';
   document.getElementById('icon').src = 'assets/img/kirby.gif';
   document.getElementById('titletext').innerHTML = 'Kirby <3';
-  document.getElementById('e').innerHTML = "Enjoyed this Easter egg? Star this repo on GitHub <a href='https://github.com/ohlookitsderpy/derpyenterprises.org' target=_blank'>here</a>!";
-  document.getElementById('o').innerHTML = 'The page will automatically refresh once the song is over!'
-  document.getElementById('uwu').style.display = 'none';
+  document.getElementById('kirby1').innerHTML = "Enjoyed this Easter egg? Star this repo on GitHub <a href='https://github.com/ohlookitsderpy/derpyenterprises.org' target=_blank'>here</a>!";
+  document.getElementById('kirby2').innerHTML = 'The page will automatically refresh once the song is over!'
+  document.getElementById('content').style.display = 'none';
   uwu.onended = () => { location.reload(); };
 });
 

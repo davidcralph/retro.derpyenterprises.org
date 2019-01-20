@@ -9,6 +9,8 @@
                   |_|    |___/                            |_|                
 MIT License
 Github: https://github.com/ohlookitsderpy/derpyenterprises.org
+
+Note: To reduce file-size, some of the content in here has been moved to nes.min.css!
 */
 
 body {
@@ -24,17 +26,8 @@ img {
     border-radius: 50%;
 }
 
-p, a {
-    color: white !important;
-}
-
-.btn {
-    text-decoration: none !important;
-    color: black !important;
-}
-
-.title {
-    background-color: none !important;
+p {
+    color: white;
 }
 
 .yeet {
@@ -49,5 +42,5 @@ p, a {
 }
 
 ::selection {
-    background: #FFFFFF;
+    background: white;
 }
