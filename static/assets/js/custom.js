@@ -25,8 +25,8 @@ const onKonamiCode = (cb) => { //https://stackoverflow.com/a/45576888
 
 // Easter Egg
 onKonamiCode(() => {
-  var uwu = new Audio('assets/audio/kirbe.ogg');
-  uwu.play();
+  var audio = new Audio('assets/audio/kirbe.ogg');
+  audio.play();
   alert('konami code activated, click ok to enable kirbe mode');
   document.body.style.background = "url('assets/img/kirby.jpg')";
   document.body.style.color = 'white';
@@ -36,7 +36,7 @@ onKonamiCode(() => {
   document.getElementById('kirby1').innerHTML = "Enjoyed this Easter egg? Star this repo on GitHub <a href='https://github.com/ohlookitsderpy/derpyenterprises.org' target=_blank'>here</a>!";
   document.getElementById('kirby2').innerHTML = 'The page will automatically refresh once the song is over!'
   document.getElementById('content').style.display = 'none';
-  uwu.onended = () => { location.reload(); };
+  audio.onended = () => { location.reload(); };
 });
 
 // Wallpapers
