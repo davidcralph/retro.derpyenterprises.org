@@ -1,16 +1,7 @@
+
 /*!
- * Font Mfizz 2.4.1
- * Copyright 2013-2017 Fizzed, Inc.
- * MIT License
- *
- * Project: http://fizzed.com/oss/font-mfizz
- *
- * The font designed for technology and software geeks representing programming
- * languages, operating systems, software engineering, and technology.
- *
- * Fizzed, Inc.
- * Web: http://fizzed.com/
- * Twitter: http://twitter.com/fizzed_inc
- * Modified by ohlookitsderpy
- */
+* Font Mfizz 2.4.1 (https://github.com/fizzed/font-mfizz)
+* MIT License
+* Modified by ohlookitsderpy
+*/
  @font-face{font-family:"FontMfizz";src:url("../font/font-mfizz.eot");src:url("../font/font-mfizz.eot?#iefix") format("embedded-opentype"), url("../font/font-mfizz.woff") format("woff"), url("../font/font-mfizz.ttf") format("truetype"), url("../font/font-mfizz.svg#font-mfizz") format("svg");font-weight:normal;font-style:normal}@media screen and (-webkit-min-device-pixel-ratio:0){@font-face{font-family:"FontMfizz";src:url("../font/font-mfizz.svg#font-mfizz") format("svg")}}[data-icon]:before{content:attr(data-icon)}.icon-css:before,.icon-html:before,.icon-javascript:before,.icon-nodejs:before,.icon-python:before,.icon-sass:before,[data-icon]:before{display:inline-block;font-family:"FontMfizz";font-style:normal;font-weight:normal;font-variant:normal;line-height:1;text-decoration:inherit;text-rendering:optimizeLegibility;text-transform:none;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-smoothing:antialiased}.icon-css:before{content:"\f116"}.icon-html:before{content:"\f13b"}.icon-javascript:before{content:"\f142"}.icon-nodejs:before{content:"\f15a"}.icon-python:before{content:"\f16c"}.icon-sass:before{content:"\f175"}
