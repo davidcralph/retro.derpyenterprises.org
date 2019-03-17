@@ -1,0 +1,32 @@
+/*
+  _____                          ______       _                       _               
+ |  __ \                        |  ____|     | |                     (_)              
+ | |  | | ___ _ __ _ __  _   _  | |__   _ __ | |_ ___ _ __ _ __  _ __ _ ___  ___  ___ 
+ | |  | |/ _ \ '__| '_ \| | | | |  __| | '_ \| __/ _ \ '__| '_ \| '__| / __|/ _ \/ __|
+ | |__| |  __/ |  | |_) | |_| | | |____| | | | ||  __/ |  | |_) | |  | \__ \  __/\__ \
+ |_____/ \___|_|  | .__/ \__, | |______|_| |_|\__\___|_|  | .__/|_|  |_|___/\___||___/
+                  | |     __/ |                           | |                         
+                  |_|    |___/                            |_|                
+MIT License
+Github: https://github.com/ohlookitsderpy/derpyenterprises.org
+*/
+
+body {
+    background-image: url('../img/404.jpg');
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100% !important;
+    color: white;
+    font-family: 'Press Start 2P';
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+::selection {
+    background: #FFFFFF;
+}

@@ -1,0 +1,51 @@
+/*
+  _____                          ______       _                       _               
+ |  __ \                        |  ____|     | |                     (_)              
+ | |  | | ___ _ __ _ __  _   _  | |__   _ __ | |_ ___ _ __ _ __  _ __ _ ___  ___  ___ 
+ | |  | |/ _ \ '__| '_ \| | | | |  __| | '_ \| __/ _ \ '__| '_ \| '__| / __|/ _ \/ __|
+ | |__| |  __/ |  | |_) | |_| | | |____| | | | ||  __/ |  | |_) | |  | \__ \  __/\__ \
+ |_____/ \___|_|  | .__/ \__, | |______|_| |_|\__\___|_|  | .__/|_|  |_|___/\___||___/
+                  | |     __/ |                           | |                         
+                  |_|    |___/                            |_|                
+MIT License
+Github: https://github.com/ohlookitsderpy/derpyenterprises.org
+
+Note: To reduce file-size, some of the content in here has been moved to nes.min.css!
+*/
+
+body {
+    background-image: url('../img/old.jpg');
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100% !important;
+}
+
+img {
+    border-radius: 50%;
+}
+
+p {
+    color: white;
+}
+
+.yeet {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        height: auto;
+        width: 50%;
+    }
+}
+
+::selection {
+    background: white;
+}
+
+.icon {
+    color: white; 
+    font-size: 32px !important;
+}
