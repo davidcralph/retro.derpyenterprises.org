@@ -30,6 +30,10 @@ p {
     color: white;
 }
 
+a {
+    color: white !important;
+}
+
 .yeet {
     display: none;
 }
