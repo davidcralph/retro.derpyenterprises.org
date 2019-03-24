@@ -34,7 +34,7 @@ onKonamiCode(() => {
   document.getElementById('icon').src = 'assets/img/kirby.gif';
   document.getElementById('titletext').innerHTML = 'Kirby <3';
   document.getElementById('kirby1').innerHTML = "Enjoyed this Easter egg? Star this repo on GitHub <a href='https://github.com/ohlookitsderpy/derpyenterprises.org' target=_blank'>here</a>!";
-  document.getElementById('kirby2').innerHTML = 'The page will automatically refresh once the song is over!'
+  document.getElementById('kirby2').innerHTML = 'The page will automatically refresh once the song is over!';
   document.getElementById('content').style.display = 'none';
   audio.onended = () => { location.reload(); };
 });
@@ -49,7 +49,7 @@ const getCurrentSeason = () => { //https://gist.github.com/neris/5ddff1ec5d42160
   if (now < new Date(currentYear, 8, 1))  return 'summer';
   if (now < new Date(currentYear, 11, 1)) return 'autumn';
   return 'winter';
-}
+};
 
 switch (getCurrentSeason()) { //https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
   case 'winter':
