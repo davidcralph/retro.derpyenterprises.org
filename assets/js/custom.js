@@ -28,7 +28,7 @@ onKonamiCode(() => {
   var audio = new Audio('assets/audio/kirbe.ogg');
   audio.play();
   alert('konami code activated, click ok to enable kirbe mode');
-  document.body.style.background = "url('assets/img/kirby.jpg')";
+  document.body.style.background = "url('assets/img/kirby.webp')";
   document.body.style.color = 'white';
   document.title = 'kirbe mode enabled';
   document.getElementById('icon').src = 'assets/img/kirby.gif';
@@ -53,16 +53,16 @@ const getCurrentSeason = () => { //https://gist.github.com/neris/5ddff1ec5d42160
 
 switch (getCurrentSeason()) { //https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
   case 'winter':
-    document.body.style.background = "url('assets/img/seasons/winter.jpg')";
+    document.body.style.background = "url('assets/img/seasons/winter.webp')";
     break;
   case 'spring':
-    document.body.style.background = "url('assets/img/seasons/spring.jpg')";
+    document.body.style.background = "url('assets/img/seasons/spring.webp')";
     break;
   case 'summer':
-    document.body.style.background = "url('assets/img/seasons/summer.jpg')";
+    document.body.style.background = "url('assets/img/seasons/summer.webp')";
     break;
   case 'autumn':
-    document.body.style.background = "url('assets/img/seasons/autumn.jpg')";
+    document.body.style.background = "url('assets/img/seasons/autumn.webp')";
     document.getElementById('titletext').setAttribute('style', 'color: white !important;');
     document.getElementById('gang').setAttribute('style', 'color: white !important;');
     break;
