@@ -8,13 +8,13 @@
                   | |     __/ |                           | |                         
                   |_|    |___/                            |_|                
 MIT License
-Github: https://github.com/ohlookitsderpy/derpyenterprises.org
+GitHub: https://github.com/ohlookitsderpy/derpyenterprises.org
 */
 
 // Konami code
-const onKonamiCode = (cb) => { //https://stackoverflow.com/a/45576888
-  var input = '';
-  var key = '38384040373937396665';
+const onKonamiCode = (cb) => { // https://stackoverflow.com/a/45576888
+  let input = '';
+  let key = '38384040373937396665';
   document.addEventListener('keydown', (e) => {
     input += ('' + e.keyCode);
     if (input === key) return cb();
@@ -25,7 +25,7 @@ const onKonamiCode = (cb) => { //https://stackoverflow.com/a/45576888
 
 // Easter Egg
 onKonamiCode(() => {
-  var audio = new Audio('assets/audio/kirbe.ogg');
+  let audio = new Audio('assets/audio/kirbe.ogg'); // Audio removed in GitHub repository due to copyright reasons
   audio.play();
   alert('konami code activated, click ok to enable kirbe mode');
   document.body.style.background = "url('assets/img/kirby.webp')";
@@ -40,7 +40,7 @@ onKonamiCode(() => {
 });
 
 // Wallpapers
-const getCurrentSeason = () => { //https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
+const getCurrentSeason = () => { // https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
   var now = new Date();
   var currentYear = now.getFullYear();
   
@@ -51,7 +51,7 @@ const getCurrentSeason = () => { //https://gist.github.com/neris/5ddff1ec5d42160
   return 'winter';
 };
 
-switch (getCurrentSeason()) { //https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
+switch (getCurrentSeason()) { // https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
   case 'winter':
     document.body.style.background = "url('assets/img/seasons/winter.webp')";
     break;
