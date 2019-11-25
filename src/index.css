@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+      height: auto;
+      width: 50%;
+  }
+}
+
+.icon svg {
+  padding: 3px;
+}
+
+#avatar {
+  border-radius: 50%;
+}
+
+.rotate {
+  size: 32px;
+}
