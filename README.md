@@ -5,7 +5,7 @@
 My website with info about me, projects and other fun stuff
 
 ## About
-Licensed under MIT, however would be nice if you changed things when using this site for something instead of just putting your own name on it.
+Licensed under MIT, however would be nice if you changed things when using this site for something instead of just putting your own name on it. Please note I don't own the images used on the site, if you want them removed contact me (see my profile for email).
 
 ## Links
 [Production (derpyenterprises.org)](https://derpyenterprises.org)
