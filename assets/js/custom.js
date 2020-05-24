@@ -24,11 +24,15 @@ const onKonamiCode = (cb) => { // https://stackoverflow.com/a/45576888
 }
 
 // Easter Egg
+document.addEventListener('DOMContentLoaded', () => localStorage.removeItem('kirbe'));
+
 onKonamiCode(() => {
-  let audio = new Audio('assets/audio/kirbe.ogg'); // Audio removed in GitHub repository due to copyright reasons
+  if (localStorage.getItem('kirbe') === '1') return alert('kirbe mode already enabled yes');
+  localStorage.setItem('kirbe', 1);
+  let audio = new Audio('https://cdn.derpyenterprises.org/website/kirbe.ogg');
   audio.play();
   alert('konami code activated, click ok to enable kirbe mode');
-  document.body.style.background = "url('assets/img/kirby.webp')";
+  document.body.style.background = "url('https://cdn.derpyenterprises.org/website/kirby.webp')";
   document.body.style.color = 'white';
   document.title = 'kirbe mode enabled';
   document.getElementById('icon').src = 'assets/img/kirby.gif';
@@ -41,8 +45,8 @@ onKonamiCode(() => {
 
 // Wallpapers
 const getCurrentSeason = () => { // https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
-  var now = new Date();
-  var currentYear = now.getFullYear();
+  let now = new Date();
+  let currentYear = now.getFullYear();
   
   if (now < new Date(currentYear, 2, 1))  return 'winter';
   if (now < new Date(currentYear, 5, 1))  return 'spring';
@@ -53,16 +57,16 @@ const getCurrentSeason = () => { // https://gist.github.com/neris/5ddff1ec5d4216
 
 switch (getCurrentSeason()) { // https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
   case 'winter':
-    document.body.style.background = "url('assets/img/seasons/winter.webp')";
+    document.body.style.background = "url('https://cdn.derpyenterprises.org/website/seasons/winter.webp')";
     break;
   case 'spring':
-    document.body.style.background = "url('assets/img/seasons/spring.webp')";
+    document.body.style.background = "url('https://cdn.derpyenterprises.org/website/seasons/spring.webp')";
     break;
   case 'summer':
-    document.body.style.background = "url('assets/img/seasons/summer.webp')";
+    document.body.style.background = "url('https://cdn.derpyenterprises.org/website/seasons/summer.webp')";
     break;
   case 'autumn':
-    document.body.style.background = "url('assets/img/seasons/autumn.webp')";
+    document.body.style.background = "url('https://cdn.derpyenterprises.org/website/seasons/autumn.webp')";
     document.getElementById('titletext').setAttribute('style', 'color: white !important;');
     document.getElementById('gang').setAttribute('style', 'color: white !important;');
     break;

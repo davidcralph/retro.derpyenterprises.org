@@ -14,7 +14,7 @@ Note: To reduce file size, some of the content in here has been moved to nes.min
 */
 
 body {
-    background-image: url('../img/old.webp');
+    background-image: url('https://cdn.derpyenterprises.org/website/old.webp');
     background-attachment: fixed !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
