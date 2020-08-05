@@ -1,12 +1,12 @@
 /*
-  _____                          ______       _                       _               
- |  __ \                        |  ____|     | |                     (_)              
- | |  | | ___ _ __ _ __  _   _  | |__   _ __ | |_ ___ _ __ _ __  _ __ _ ___  ___  ___ 
+  _____                          ______       _                       _
+ |  __ \                        |  ____|     | |                     (_)
+ | |  | | ___ _ __ _ __  _   _  | |__   _ __ | |_ ___ _ __ _ __  _ __ _ ___  ___  ___
  | |  | |/ _ \ '__| '_ \| | | | |  __| | '_ \| __/ _ \ '__| '_ \| '__| / __|/ _ \/ __|
  | |__| |  __/ |  | |_) | |_| | | |____| | | | ||  __/ |  | |_) | |  | \__ \  __/\__ \
  |_____/ \___|_|  | .__/ \__, | |______|_| |_|\__\___|_|  | .__/|_|  |_|___/\___||___/
-                  | |     __/ |                           | |                         
-                  |_|    |___/                            |_|                
+                  | |     __/ |                           | |
+                  |_|    |___/                            |_|
 MIT License
 GitHub: https://github.com/ohlookitsderpy/derpyenterprises.org
 */
@@ -47,7 +47,7 @@ onKonamiCode(() => {
 const getCurrentSeason = () => { // https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
   let now = new Date();
   let currentYear = now.getFullYear();
-  
+
   if (now < new Date(currentYear, 2, 1))  return 'winter';
   if (now < new Date(currentYear, 5, 1))  return 'spring';
   if (now < new Date(currentYear, 8, 1))  return 'summer';
