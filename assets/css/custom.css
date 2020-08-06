@@ -34,7 +34,7 @@ a {
     color: white !important;
 }
 
-.yeet {
+.noscript {
     display: none;
 }
 
@@ -50,6 +50,6 @@ a {
 }
 
 .icon {
-    color: white; 
+    color: white;
     font-size: 32px !important;
 }
