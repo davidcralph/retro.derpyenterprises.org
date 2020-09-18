@@ -9,8 +9,6 @@
                   |_|    |___/                            |_|
 MIT License
 GitHub: https://github.com/ohlookitsderpy/derpyenterprises.org
-
-Note: To reduce file size, some of the content in here has been moved to nes.min.css!
 */
 
 body {
@@ -38,13 +36,6 @@ a {
     display: none;
 }
 
-@media only screen and (min-width: 1000px) {
-    .container {
-        height: auto;
-        width: 50%;
-    }
-}
-
 ::selection {
     background: white;
 }
@@ -52,4 +43,12 @@ a {
 .icon {
     color: white;
     font-size: 32px !important;
+}
+
+.nes-btn {
+    color: black !important;
+}
+
+.underline {
+    text-decoration: underline;
 }
