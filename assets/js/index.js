@@ -12,7 +12,7 @@ GitHub: https://github.com/ohlookitsderpy/derpyenterprises.org
 */
 
 const instance = new Typewriter('#text', {
-  strings: ['Frontend Developer', 'Backend Developer', 'Student'],
+  strings: ["Frontend Developer", "Backend Developer", "Student"],
   autoStart: true,
   loop: true,
   delay: 100
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => localStorage.removeItem('kir
 new Egg('up, up, down, down, left, right, left, right, b, a', () => {
   if (localStorage.getItem('kirbe') === '1') return alert('kirbe mode already enabled yes');
   localStorage.setItem('kirbe', 1);
-  const audio = new Audio('https://cdn.derpyenterprises.org/website/kirbe.ogg');
+  let audio = new Audio('https://cdn.derpyenterprises.org/website/kirbe.ogg');
   audio.play();
   alert('konami code activated, click ok to enable kirbe mode');
   document.body.style.background = "url('https://cdn.derpyenterprises.org/website/kirby.webp')";
@@ -40,8 +40,8 @@ new Egg('up, up, down, down, left, right, left, right, b, a', () => {
 
 // Wallpapers
 const getCurrentSeason = () => { // https://gist.github.com/neris/5ddff1ec5d421602a01b1c81fa3fc076
-  const now = new Date();
-  const currentYear = now.getFullYear();
+  let now = new Date();
+  let currentYear = now.getFullYear();
 
   if (now < new Date(currentYear, 2, 1))  return 'winter';
   if (now < new Date(currentYear, 5, 1))  return 'spring';

@@ -22,15 +22,11 @@ body {
     font-family: 'Press Start 2P';
 }
 
-a, h1, h2 {
+a {
     text-decoration: none !important;
     color: white !important;
 }
 
 ::selection {
     background: #FFFFFF;
-}
-
-.nes-btn {
-    color: black !important;
 }
